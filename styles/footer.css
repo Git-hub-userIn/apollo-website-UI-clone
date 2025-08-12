@@ -1,16 +1,22 @@
 #relatedLinks{
     background-color: #060822;
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 2em;
     column-gap: 1em;
     row-gap: 1em;
 }
 
+.footerLinksContainer{
+    height: fit-content;
+}
+
 .footerLinksContainer h3{
+    font-size: 1.2em;
     color: #ffa500;
     font-weight: 500;
     margin-bottom: 1em;
+    line-height: 1.2;
 }
 
 .footerLinksContainer ul{
@@ -20,5 +26,5 @@
 }
 
 .footerLinksContainer li{
-    margin-bottom: 1em;
+    margin-bottom: 0.6em;
 }

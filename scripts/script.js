@@ -30,7 +30,7 @@ const footerDataObject = {
     'News And Media' : ['News', 'Events', 'Interviews', 'Watch Our Videos', 'Media Contact', 'Apollo Hospital Reviews'],
     'Centres Of Excellence' : ['Orthopaedics', 'Nephrology & Urology', 'Biatric Surgery', 'Cardiology', 'Pulmonology', 'Gasteroenterology'],
     'Medical Procedures' : ['Proton Therapy For Cancer Treatment', 'Cosmetic And Plastic Surgery', 'Bone Marrow Transplant', 'Oral And Maxillofacial Surgery', 'Hand MicroSurgery', 'G Scan - Open Standing MRI Scan', 'Hip Anthroscopy'],
-    'Corporate' : ['Company OverView', 'Our Doctors Achieve', 'The Apollo Ethos', 'The Apollo Story', 'Management', 'Investor Relations', 'Initiatives', 'Awards And Accolades', 'Careers'],
+    'Corporate' : ['Company OverView', 'Our Doctors Achieve', 'The Apollo Ethos', 'The Apollo Story', 'Management', 'Investor Relations','Investor Presentation', 'Initiatives', 'Awards And Accolades', 'Careers'],
     'Academics And Research' : ['Courses', 'Academics', 'Clinical Research', 'Honors List', 'Apollo Torch : Alumni Network', 'Web Broadcasts', 'Collaborative Forums', "What's New"],
     'Hospitals' : ['Hospitals In India', 'International Hospitals', 'Apollo Clinics', 'Reach Hospitals', 'Apollo Cradle', 'Apollo Fertility', 'Apollo Cancer Centers', 'Apollo Proton Centres'],
     'Blogs' : ['Health Library', 'COVID-19 Updates', 'COVID-19 FAQs', 'COVID-19 Vaccinations', 'COVID-19 New Symptoms'],
@@ -60,15 +60,14 @@ function createFooterLinksDiv(footerDataObject){
     return containerAll;
 }
 
-
-function writeInNewTab(HTMLelement){
-    console.log("writing a new tab");
-    const newTab = window.open("", "_blank");
-    const doc = newTab.document;
-
-    // Set up basic structure
-    doc.title = "TEST";
-    doc.body.appendChild(HTMLelement);
-}
-
 footer.appendChild(createFooterLinksDiv(footerDataObject));
+
+// function writeInNewTab(HTMLelement){
+//     console.log("writing a new tab");
+//     const newTab = window.open("", "_blank");
+//     const doc = newTab.document;
+
+//     // Set up basic structure
+//     doc.title = "TEST";
+//     doc.body.appendChild(HTMLelement);
+// }
