@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: #212121;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        background-color: white; /*This color doesnt propagate to navItem and dropdown*/
+        gap: 4rem;
+      }
+
+      nav * {
+        background-color: white;
+      }
+
+      .navItem {
+        position: relative;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        list-style: none;
+        background-color: white;
+      }
+
+      .navItem:hover .dropdown{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navItem">
+        Home
+        <ul class="dropdown">
+          <li><a href="#">Option1</a></li>
+          <li><a href="#">Option2</a></li>
+          <li><a href="#">Option3</a></li>
+        </ul>
+      </div>
+      <div class="navItem">
+        About
+        <ul class="dropdown">
+          <li><a href="#">Option1</a></li>
+          <li><a href="#">Option2</a></li>
+          <li><a href="#">Option3</a></li>
+        </ul>
+      </div>
+      <div class="navItem">
+        Others
+        <ul class="dropdown">
+          <li><a href="#">Option1</a></li>
+          <li><a href="#">Option2</a></li>
+          <li><a href="#">Option3</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
