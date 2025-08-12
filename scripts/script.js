@@ -60,7 +60,13 @@ function createFooterLinksDiv(footerDataObject){
     return containerAll;
 }
 
-footer.appendChild(createFooterLinksDiv(footerDataObject));
+footer.prepend(createFooterLinksDiv(footerDataObject));
+//prepend is used to append an element as the parent's first child
+//to append an element as parent's last child, we can simply use appendChild
+//to append before a child inside parent, we use parent.insertBefore(newElement, parent.child)
+
+
+
 
 // function writeInNewTab(HTMLelement){
 //     console.log("writing a new tab");

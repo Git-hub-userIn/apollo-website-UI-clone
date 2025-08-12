@@ -28,3 +28,23 @@
 .footerLinksContainer li{
     margin-bottom: 0.6em;
 }
+
+#footerBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#copyrightText{
+    padding-left: 1rem;
+}
+
+.iconLinks{
+    text-decoration: none;
+}
+
+.icons{
+    height: 1.85rem;
+}
