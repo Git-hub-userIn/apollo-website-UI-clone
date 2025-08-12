@@ -7,16 +7,18 @@
     row-gap: 1em;
 }
 
-
-.footerLinksContainer{
-    color: white;
-}
 .footerLinksContainer h3{
     color: #ffa500;
     font-weight: 500;
     margin-bottom: 1em;
 }
 
-.footerLinksContainer > li{
+.footerLinksContainer ul{
+    list-style-type: none;
     color: #ccc;
+    font-size: 0.9em;
+}
+
+.footerLinksContainer li{
+    margin-bottom: 1em;
 }

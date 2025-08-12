@@ -56,7 +56,6 @@ function createFooterLinksDiv(footerDataObject){
         container.appendChild(linksList);
         containerAll.appendChild(container);
     }
-    document.getElementById("testBtn").addEventListener('click',()=> writeInNewTab(containerAll));
     containerAll.id = "relatedLinks";
     return containerAll;
 }
