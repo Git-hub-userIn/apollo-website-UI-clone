@@ -1,0 +1,35 @@
+#carousel{
+    position: relative;
+}
+
+.carouselImages{
+    display: none;
+    margin: 0;
+    width: 100%;
+}
+
+.activeCarouselImg{
+    display: block;
+}
+
+#carouselNavBar{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 15px;
+}
+
+.carouselNavButtons{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+}
+
+.activeNavButton{
+    background-color: rgba(255, 255, 255, 0.9);
+}
