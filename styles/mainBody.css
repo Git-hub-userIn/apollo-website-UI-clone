@@ -8,7 +8,7 @@
     width: 100%;
 }
 
-.activeCarouselImg{
+.activeCarouselImage{
     display: block;
 }
 
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     gap: 3rem;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .carouselNavButtons{
@@ -30,6 +30,6 @@
     border: none;
 }
 
-.activeNavButton{
+.activeCarouselNavButton{
     background-color: rgba(255, 255, 255, 0.9);
 }
